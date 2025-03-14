@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1400">
+    <!-- Styles -->
+    <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#666"/>
+        </marker>
+    </defs>
+
+    <!-- Participant boxes -->
+    <rect x="100" y="40" width="240" height="80" rx="10" fill="#808080" stroke="#666" stroke-width="3"/>
+    <text x="220" y="90" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="28">User</text>
+
+    <rect x="500" y="40" width="240" height="80" rx="10" fill="#808080" stroke="#666" stroke-width="3"/>
+    <text x="620" y="90" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="28">Contract</text>
+
+    <rect x="900" y="40" width="240" height="80" rx="10" fill="#808080" stroke="#666" stroke-width="3"/>
+    <text x="1020" y="90" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="28">Level 0 Validator</text>
+
+    <rect x="1300" y="40" width="240" height="80" rx="10" fill="#808080" stroke="#666" stroke-width="3"/>
+    <text x="1420" y="90" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="28">Level 1/2 Validators</text>
+
+    <!-- Lifelines -->
+    <line x1="220" y1="120" x2="220" y2="1360" stroke="#999" stroke-width="3" stroke-dasharray="10,10"/>
+    <line x1="620" y1="120" x2="620" y2="1360" stroke="#999" stroke-width="3" stroke-dasharray="10,10"/>
+    <line x1="1020" y1="120" x2="1020" y2="1360" stroke="#999" stroke-width="3" stroke-dasharray="10,10"/>
+    <line x1="1420" y1="120" x2="1420" y2="1360" stroke="#999" stroke-width="3" stroke-dasharray="10,10"/>
+
+    <!-- Initial Request Flow -->
+    <line x1="220" y1="200" x2="620" y2="200" stroke="#666" stroke-width="3" marker-end="url(#arrowhead)"/>
+    <text x="420" y="190" text-anchor="middle" font-family="Arial, sans-serif" font-size="24">Submit Request</text>
+
+    <!-- Level 0 Validation -->
+    <line x1="620" y1="320" x2="1020" y2="320" stroke="#666" stroke-width="3" marker-end="url(#arrowhead)"/>
+    <text x="820" y="310" text-anchor="middle" font-family="Arial, sans-serif" font-size="24">Level 0 Validation Request</text>
+
+    <line x1="1020" y1="400" x2="620" y2="400" stroke="#666" stroke-width="3" marker-end="url(#arrowhead)"/>
+    <text x="820" y="390" text-anchor="middle" font-family="Arial, sans-serif" font-size="24">Level 0 Result</text>
+
+    <!-- Security Check Box -->
+    <rect x="160" y="480" width="1360" height="200" fill="#f8f9fa" stroke="#666" stroke-width="2"/>
+    <text x="200" y="520" font-family="Arial, sans-serif" font-size="24" fill="#666">[If Security Required]</text>
+
+    <!-- Level 1 Validation -->
+    <line x1="620" y1="560" x2="1420" y2="560" stroke="#666" stroke-width="3" marker-end="url(#arrowhead)"/>
+    <text x="1020" y="550" text-anchor="middle" font-family="Arial, sans-serif" font-size="24">Level 1 Parallel Validation (x validators)</text>
+
+    <line x1="1420" y1="640" x2="620" y2="640" stroke="#666" stroke-width="3" marker-end="url(#arrowhead)"/>
+    <text x="1020" y="630" text-anchor="middle" font-family="Arial, sans-serif" font-size="24">Level 1 Results</text>
+
+    <!-- No Consensus Box -->
+    <rect x="200" y="760" width="1280" height="360" fill="#f0f0f0" stroke="#666" stroke-width="2"/>
+    <text x="240" y="800" font-family="Arial, sans-serif" font-size="24" fill="#666">[If No Consensus in Level 1]</text>
+
+    <!-- Level 2 Validation -->
+    <line x1="620" y1="880" x2="1420" y2="880" stroke="#666" stroke-width="3" marker-end="url(#arrowhead)"/>
+    <text x="1020" y="870" text-anchor="middle" font-family="Arial, sans-serif" font-size="24">Level 2 Validation (y validators, y > x)</text>
+
+    <line x1="1420" y1="960" x2="620" y2="960" stroke="#666" stroke-width="3" marker-end="url(#arrowhead)"/>
+    <text x="1020" y="950" text-anchor="middle" font-family="Arial, sans-serif" font-size="24">Level 2 Results</text>
+
+    <!-- Final Result -->
+    <line x1="620" y1="1200" x2="220" y2="1200" stroke="#666" stroke-width="3" marker-end="url(#arrowhead)"/>
+    <text x="420" y="1190" text-anchor="middle" font-family="Arial, sans-serif" font-size="24">Return Final Result</text>
+
+    <!-- Notes -->
+    <rect x="40" y="1240" width="1520" height="120" fill="#f8f9fa" stroke="#666" stroke-width="2"/>
+    <text x="60" y="1280" font-family="Arial, sans-serif" font-size="24" fill="#666">Level 0: Single validator execution</text>
+    <text x="60" y="1320" font-family="Arial, sans-serif" font-size="24" fill="#666">Level 1: Multiple validators (x) working in parallel</text>
+    <text x="60" y="1360" font-family="Arial, sans-serif" font-size="24" fill="#666">Level 2: Extended validation with larger validator set (y > x) if Level 1 consensus fails</text>
+</svg>

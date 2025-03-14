@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800">
+    <!-- Styles -->
+    <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#333"/>
+        </marker>
+    </defs>
+    
+    <!-- Process Boxes -->
+    <rect x="200" y="50" width="200" height="60" rx="10" fill="#4CAF50" stroke="#2E7D32" stroke-width="2"/>
+    <text x="300" y="85" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="16">User Request</text>
+    
+    <rect x="200" y="150" width="200" height="60" rx="10" fill="#4CAF50" stroke="#2E7D32" stroke-width="2"/>
+    <text x="300" y="185" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="16">Smart Contract</text>
+    
+    <rect x="200" y="250" width="200" height="60" rx="10" fill="#4CAF50" stroke="#2E7D32" stroke-width="2"/>
+    <text x="300" y="285" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="16">Request Initialization</text>
+    
+    <rect x="200" y="350" width="200" height="60" rx="10" fill="#4CAF50" stroke="#2E7D32" stroke-width="2"/>
+    <text x="300" y="385" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="16">Level 0 Validation</text>
+    
+    <!-- Diamond Decision Box -->
+    <path d="M300 450 L375 500 L300 550 L225 500 Z" fill="#FFA726" stroke="#F57C00" stroke-width="2"/>
+    <text x="300" y="505" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="16">Consensus?</text>
+    
+    <rect x="200" y="575" width="200" height="60" rx="10" fill="#4CAF50" stroke="#2E7D32" stroke-width="2"/>
+    <text x="300" y="610" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="16">Level 1 Validation</text>
+    
+    <!-- Second Diamond Decision Box -->
+    <path d="M300 675 L375 725 L300 775 L225 725 Z" fill="#FFA726" stroke="#F57C00" stroke-width="2"/>
+    <text x="300" y="730" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="16">Consensus?</text>
+    
+    <!-- Level 2 and Final Result -->
+    <rect x="450" y="575" width="200" height="60" rx="10" fill="#4CAF50" stroke="#2E7D32" stroke-width="2"/>
+    <text x="550" y="610" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="16">Level 2 Validation</text>
+    
+    <rect x="450" y="450" width="200" height="60" rx="10" fill="#2196F3" stroke="#1976D2" stroke-width="2"/>
+    <text x="550" y="485" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="16">Final Result</text>
+    
+    <!-- Connecting Lines -->
+    <line x1="300" y1="110" x2="300" y2="150" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <line x1="300" y1="210" x2="300" y2="250" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <line x1="300" y1="310" x2="300" y2="350" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <line x1="300" y1="410" x2="300" y2="450" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+    
+    <!-- No path -->
+    <line x1="300" y1="550" x2="300" y2="575" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <text x="320" y="565" fill="#333" font-family="Arial, sans-serif" font-size="14">No</text>
+    
+    <!-- Yes path to Final Result -->
+    <path d="M375 500 L450 480" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" fill="none"/>
+    <text x="400" y="475" fill="#333" font-family="Arial, sans-serif" font-size="14">Yes</text>
+    
+    <!-- Level 1 to second diamond -->
+    <line x1="300" y1="635" x2="300" y2="675" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+    
+    <!-- No path to Level 2 -->
+    <path d="M375 725 L450 605" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" fill="none"/>
+    <text x="400" y="650" fill="#333" font-family="Arial, sans-serif" font-size="14">No</text>
+    
+    <!-- Yes path from second diamond -->
+    <path d="M225 725 L450 510" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" fill="none"/>
+    <text x="350" y="600" fill="#333" font-family="Arial, sans-serif" font-size="14">Yes</text>
+    
+    <!-- Level 2 to Final -->
+    <line x1="550" y1="575" x2="550" y2="510" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+</svg>

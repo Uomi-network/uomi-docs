@@ -1,0 +1,60 @@
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background -->
+    <rect width="800" height="500" fill="#ffffff"/>
+    
+    <!-- Title -->
+    <text x="400" y="40" text-anchor="middle" font-size="24" font-weight="bold" fill="#333">UOMI Fee System</text>
+    
+    <!-- Native Fees Section -->
+    <rect x="50" y="80" width="300" height="360" rx="10" fill="#f5f5f5" stroke="#2196f3" stroke-width="2"/>
+    <text x="200" y="110" text-anchor="middle" font-size="18" fill="#2196f3">Native Fees</text>
+    
+    <!-- Native Fee Formula -->
+    <rect x="70" y="130" width="260" height="60" fill="#ffffff" stroke="#2196f3"/>
+    <text x="200" y="165" text-anchor="middle" font-size="12" fill="#333" font-family="monospace">
+        tx_fee = length_fee + base_fee +
+    </text>
+    <text x="200" y="180" text-anchor="middle" font-size="12" fill="#333" font-family="monospace">
+        (weight_fee × adjust) + tip
+    </text>
+
+    <!-- Native Fee Components -->
+    <rect x="70" y="200" width="260" height="220" fill="#ffffff" stroke="#2196f3"/>
+    <text x="80" y="225" font-size="14" fill="#333">Components:</text>
+    <line x1="70" y1="235" x2="330" y2="235" stroke="#2196f3"/>
+    
+    <text x="90" y="260" font-size="14">• Length Fee (bytes)</text>
+    <text x="90" y="290" font-size="14">• Base Fee (fixed)</text>
+    <text x="90" y="320" font-size="14">• Weight Fee (computation)</text>
+    <text x="90" y="350" font-size="14">• Adjustment (congestion)</text>
+    <text x="90" y="380" font-size="14">• Tips (priority)</text>
+    
+    <!-- Ethereum Fees Section -->
+    <rect x="450" y="80" width="300" height="360" rx="10" fill="#f5f5f5" stroke="#ff9800" stroke-width="2"/>
+    <text x="600" y="110" text-anchor="middle" font-size="18" fill="#ff9800">Ethereum Fees</text>
+    
+    <!-- Ethereum Fee Formula -->
+    <rect x="470" y="130" width="260" height="60" fill="#ffffff" stroke="#ff9800"/>
+    <text x="600" y="165" text-anchor="middle" font-size="12" fill="#333" font-family="monospace">
+        tx_fee = gas × (base_fee_per_gas +
+    </text>
+    <text x="600" y="180" text-anchor="middle" font-size="12" fill="#333" font-family="monospace">
+        priority_fee_per_gas)
+    </text>
+
+    <!-- Ethereum Fee Components -->
+    <rect x="470" y="200" width="260" height="220" fill="#ffffff" stroke="#ff9800"/>
+    <text x="480" y="225" font-size="14" fill="#333">Components:</text>
+    <line x1="470" y1="235" x2="730" y2="235" stroke="#ff9800"/>
+    
+    <text x="490" y="260" font-size="14">• Gas (resource units)</text>
+    <text x="490" y="290" font-size="14">• Base Fee (dynamic)</text>
+    <text x="490" y="320" font-size="14">• Priority Fee (tips)</text>
+    <text x="490" y="350" font-size="14">• 20% Burn Rate</text>
+    <text x="490" y="380" font-size="14">• EIP-1559 Adjustment</text>
+
+    <!-- Distribution Arrows -->
+    <path d="M 350 250 L 400 250 L 450 250" fill="none" stroke="#666" stroke-width="2" stroke-dasharray="5,5"/>
+    <text x="400" y="240" text-anchor="middle" font-size="12" fill="#666">Dual</text>
+    <text x="400" y="270" text-anchor="middle" font-size="12" fill="#666">System</text>
+</svg>
