@@ -52,3 +52,4 @@
     * [Installing WASP](build/build-an-agent/installing-wasp.md)
     * [Agents API Reference](build/build-an-agent/agents-api-reference.md)
     * [Available AI Models](build/build-an-agent/available-ai-models.md)
+    * [Agent TSS](build/build-an-agent/agent-tss.md)
