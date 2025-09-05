@@ -14,7 +14,7 @@
 
 ### Detailed Model Insights
 
-#### Qwen2.5-32B-Instruct
+#### Qwen2.5-32B-Instruct 
 
 The Qwen2.5 model represents the latest advancement in large language model technology. Developed by Alibaba's Qwen team, this model brings several key innovations:
 
