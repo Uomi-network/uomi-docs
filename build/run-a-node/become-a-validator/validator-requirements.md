@@ -31,6 +31,6 @@ Validator are the nodes which require the most powerful and fast machine, becaus
 | --------- | --------------------------------- |
 | System    | Ubuntu 22.04                      |
 | CPU       | 12 cores - minimum 4 Ghz per core |
-| Memory    | 32 GB                             |
+| Memory    | 64 GB                             |
 | Hard Disk | 1 TB SSD NVMe                     |
-| GPU       | 2 x RTX 4090                      |
+| GPU       | 2 x RTX 4090 (or equivalent)      |
